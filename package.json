@@ -3,13 +3,14 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "dotenv": "^10.0.0",
+        "eslint": "^7.11.0",
         "eslint-plugin-jest": "^25.3.0",
         "eslint-plugin-prettier": "^4.0.0",
-        "eslint": "^7.11.0",
         "prettier": "^2.4.1"
     },
     "scripts": {
-        "start": "index.html",
+        "start": "node index",
         "lint": "eslint \"**/*.js\" --ignore-path .gitignore --no-error-on-unmatched-pattern",
         "lint:fix": "eslint \"**/*.js\" --fix --ignore-path .gitignore --no-error-on-unmatched-pattern",
         "format": "prettier --check . \"!**/*.css\" --ignore-path .gitignore",
@@ -35,5 +36,17 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    }
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vladyslav2020/web-lab4.git"
+    },
+    "author": "Vlad",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Vladyslav2020/web-lab4/issues"
+    },
+    "homepage": "https://github.com/Vladyslav2020/web-lab4#readme",
+    "description": ""
 }
