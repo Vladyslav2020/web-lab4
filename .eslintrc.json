@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["jest"],
+    "rules": {
+        "comma-dangle": "off",
+        "handle-callback-err": "off",
+        "consistent-return": "off",
+        "no-var": "warn",
+        "semi": "warn",
+        "indent": "warn",
+        "no-multi-spaces": "warn",
+        "space-in-parens": "warn",
+        "no-multiple-empty-lines": "warn",
+        "prefer-const": "warn",
+        "no-use-before-define": "warn"
+    }
+}
