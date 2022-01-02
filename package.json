@@ -1,0 +1,38 @@
+{
+    "name": "lab4",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "eslint-plugin-jest": "^25.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint": "^7.11.0",
+        "prettier": "^2.4.1"
+    },
+    "scripts": {
+        "lint": "eslint \"**/*.js\" --ignore-path .gitignore --no-error-on-unmatched-pattern",
+        "lint:fix": "eslint \"**/*.js\" --fix --ignore-path .gitignore --no-error-on-unmatched-pattern",
+        "format": "prettier --check . \"!**/*.css\" --ignore-path .gitignore",
+        "format:fix": "prettier --write . \"!**/*.css\" --ignore-path .gitignore",
+        "stylelint": "stylelint \"**/*.css\" --ignore-path .gitignore",
+        "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore",
+        "prepare": "husky install"
+    },
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "lint-staged": "^11.2.6",
+        "stylelint": "^14.0.1",
+        "stylelint-config-standard": "^23.0.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

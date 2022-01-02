@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Slider</title>
+        <link rel="stylesheet" href="index.css" />
+        <link
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            rel="stylesheet"
+        />
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <div class="title">Slider</div>
+            <ul>
+                <li><a href="#slide-1">Slide-1</a></li>
+                <li><a href="#slide-2">Slide-2</a></li>
+                <li><a href="#slide-3">Slide-3</a></li>
+                <li><a href="#slide-4">Slide-4</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="slides">
+                <a class="prev outer"><i class="fas fa-angle-left"></i></a>
+                <div id="slide-1">
+                    <a class="prev" href="#slide-4"></a>
+                    1
+                    <a class="next" href="#slide-2"></a>
+                </div>
+                <div id="slide-2">
+                    <a class="prev" href="#slide-1"></a>
+                    2
+                    <a class="next" href="#slide-3"></a>
+                </div>
+                <div id="slide-3">
+                    <a class="prev" href="#slide-2"></a>
+                    3
+                    <a class="next" href="#slide-4"></a>
+                </div>
+                <div id="slide-4">
+                    <a class="prev" href="#slide-3"></a>
+                    4
+                    <a class="next" href="#slide-1"></a>
+                </div>
+                <a class="next outer"><i class="fas fa-angle-right"></i></a>
+            </div>
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+        </div>
+    </body>
+</html>
