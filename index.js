@@ -9,7 +9,7 @@ const returnStaticFile = (res, filePath) => {
     fs.readFile(filePath, function (err, data) {
         if (err) {
             res.writeHead(404);
-            res.end(JSON.stringify(err));
+            res.end('404: File not found');
             return;
         }
         res.writeHead(200);
